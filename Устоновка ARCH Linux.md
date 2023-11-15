@@ -125,7 +125,7 @@ exit
 
 ### xinitrc DWM и nvidia drivers
 ```shell
-sudo pacman -S base-devel git libx11 libxft xorg-server xorg-xinit make alacrity noto-fonts zsh neofetch firefox obsidian nvim ntfs-3g pcmanfm numlockx nitrogen lxappearance xorg-setxkbmap
+sudo pacman -S base-devel git libx11 libxft xorg-server xorg-xinit make alacrity noto-fonts zsh neofetch firefox obsidian nvim ntfs-3g pcmanfm numlockx nitrogen lxappearance xorg-setxkbmap xorg-xrandr lxrandr
 ```
 
 
@@ -169,7 +169,14 @@ sudo nvidia-settings
 
 ## Звук
 ```
-sudo pacman -S pulseaudio pavucontrol
+sudo pacman -S pipewire pipewire-pulse
+```
+
+в .xinitrc 
+```
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/pipewire-media-session &
 ```
 
 
