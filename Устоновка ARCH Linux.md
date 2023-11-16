@@ -42,7 +42,7 @@ mount /dev/sda2 /mnt
 
 mount --mkdir /dev/sda1 /mnt/boot/efi
 
-swap /dev/sda3
+swapon /dev/sda3
 ```
 
 #### Устоновка системы
