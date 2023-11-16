@@ -125,7 +125,7 @@ exit
 
 ### xinitrc DWM и nvidia drivers
 ```shell
-sudo pacman -S base-devel git libx11 libxft xorg-server xorg-xinit make alacritty noto-fonts zsh neofetch firefox obsidian nvim ntfs-3g pcmanfm numlockx nitrogen lxappearance xorg-setxkbmap xorg-xrandr lxrandr
+sudo pacman -S base-devel git libx11 libxft libxinerama xorg-server xorg-xinit make alacritty noto-fonts zsh neofetch firefox obsidian nvim ntfs-3g pcmanfm numlockx nitrogen lxappearance xorg-setxkbmap xorg-xrandr lxrandr
 ```
 
 
