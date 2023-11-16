@@ -142,9 +142,9 @@ git clone https://github.com/ZeroNiki/dwm-dotfiles.git
 ```
 numlockx &
 setxkbmap -layout us,ru -option "grp:win_space_toggle" &
-nitrogen --set-zoom-fill --random ~/Pictures/Wallpaper/ &
 exec dwm &
 ```
+nitrogen --set-zoom-fill --random ~/Pictures/Wallpaper/ &
 
 
 #### NVIDIA (Пока не проверено)
