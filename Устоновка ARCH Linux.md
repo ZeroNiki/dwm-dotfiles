@@ -30,7 +30,7 @@ cfdisk /dev/sda
 ```
 mkfs.fat -F 32 /dev/sda1
 
-mkfs.ext4 /dev/sda2
+mkfs.btrfs /dev/sda2
 
 mkswap /dev/sda3
 ```
@@ -141,10 +141,12 @@ git clone https://github.com/ZeroNiki/dwm-dotfiles.git
 Добавить в .xinitrc:
 ```
 numlockx &
+slstatus &
 setxkbmap -layout us,ru -option "grp:win_space_toggle" &
-exec dwm &
-```
 nitrogen --set-zoom-fill --random ~/Pictures/Wallpaper/ &
+picom --experimental-backends -b --config .config/picom/config.conf &
+exec dwm 
+```
 
 
 #### NVIDIA (Пока не проверено)
@@ -178,6 +180,7 @@ sudo pacman -S pipewire pipewire-pulse
 /usr/bin/pipewire-pulse &
 /usr/bin/pipewire-media-session &
 ```
+
 
 
 
